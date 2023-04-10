@@ -27,7 +27,7 @@ class Test_goodreads:
         self.rows2 = self.s2.row_count()
         yield
         self.driver.close()
-    '''
+    
     def test_login(self, boot):
         self.driver.get(test_locators.url)
         self.driver.maximize_window()
@@ -142,7 +142,7 @@ class Test_goodreads:
         
         assert self.driver.current_url.__contains__("addressselect") == True
         print("SUCCESS : Successfully proceeded to buy item page")
-      '''
+      
     def test_buy(self, boot):
         self.driver.get(test_locators.url)
         self.driver.maximize_window()
